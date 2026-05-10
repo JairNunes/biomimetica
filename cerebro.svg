@@ -1,0 +1,391 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 950" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <style>
+      .label { font-size: 14px; fill: #1a1a1a; }
+      .label-region { font-size: 20px; font-weight: 700; }
+      .l1 { fill: #c8e6c9; stroke: #2e7d32; stroke-width: 0.5; }
+      .l2 { fill: #d6cdf2; stroke: #5e35b1; stroke-width: 0.5; }
+      .l3 { fill: #fad2cf; stroke: #c62828; stroke-width: 0.5; }
+      .lead { stroke: #666; stroke-width: 1; fill: none; }
+      .frontal { fill: #b3d4ff; stroke: #1a1a1a; stroke-width: 1.5; }
+      .parietal { fill: #fff3a8; stroke: #1a1a1a; stroke-width: 1.5; }
+      .temporal { fill: #b8d8b0; stroke: #1a1a1a; stroke-width: 1.5; }
+      .occipital { fill: #f5b4b4; stroke: #1a1a1a; stroke-width: 1.5; }
+      .cerebellum-shape { fill: #ffffff; stroke: #1a1a1a; stroke-width: 1.5; }
+      .stem { fill: #ffffff; stroke: #1a1a1a; stroke-width: 1.5; }
+      .sulcus { stroke: #1a1a1a; stroke-width: 0.8; fill: none; opacity: 0.55; }
+    </style>
+  </defs>
+
+  <!-- TITLE -->
+  <text x="800" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a1a">Funções cerebrais e estado da arte em IA</text>
+  <text x="800" y="62" text-anchor="middle" font-size="14" fill="#555" font-style="italic">adaptado de Liu et al., Advances and Challenges in Foundation Agents (2025)</text>
+
+  <!-- =========================================== -->
+  <!-- BRAIN — drawn in a centered frame 480x340   -->
+  <!-- positioned at translate(560, 280)            -->
+  <!-- =========================================== -->
+  <g transform="translate(560, 280)">
+    
+    <!-- FRONTAL LOBE -->
+    <path class="frontal" d="M 40,180 
+      C 30,140 35,100 60,75
+      C 90,45 130,30 175,30
+      C 215,30 245,45 260,80
+      L 265,180
+      L 260,210
+      L 240,225
+      L 200,235
+      L 150,238
+      L 100,232
+      L 60,215
+      Z" />
+    
+    <!-- PARIETAL LOBE -->
+    <path class="parietal" d="M 260,80
+      C 280,55 320,35 365,35
+      C 410,35 445,50 465,85
+      L 470,170
+      L 460,200
+      L 430,215
+      L 380,222
+      L 330,220
+      L 285,215
+      L 265,200
+      L 260,180
+      Z" />
+    
+    <!-- OCCIPITAL LOBE -->
+    <path class="occipital" d="M 465,85
+      C 485,75 510,80 525,105
+      C 540,135 545,170 535,200
+      C 525,225 505,240 480,238
+      L 460,232
+      L 458,215
+      L 463,195
+      L 470,170
+      Z" />
+    
+    <!-- TEMPORAL LOBE -->
+    <path class="temporal" d="M 100,232
+      L 150,238
+      L 200,235
+      L 240,225
+      L 285,215
+      L 330,220
+      L 380,222
+      L 430,215
+      L 460,232
+      L 470,265
+      L 460,295
+      L 425,315
+      L 370,325
+      L 305,325
+      L 240,320
+      L 175,310
+      L 125,295
+      L 95,275
+      L 90,250
+      Z" />
+
+    <!-- BRAIN STEM (positioned below temporal, slightly left of cerebellum) -->
+    <path class="stem" d="M 320,325
+      L 365,325
+      L 370,360
+      L 365,395
+      L 350,420
+      L 335,420
+      L 320,395
+      L 315,360
+      Z" />
+
+    <!-- CEREBELLUM (right of stem, more compact) -->
+    <path class="cerebellum-shape" d="M 425,315
+      L 460,300
+      L 495,302
+      L 525,318
+      L 540,345
+      L 535,375
+      L 510,395
+      L 470,402
+      L 435,395
+      L 410,378
+      L 402,355
+      L 408,330
+      Z" />
+    <g stroke="#1a1a1a" stroke-width="0.6" opacity="0.5" fill="none">
+      <path d="M 415,335 Q 460,338 515,335"/>
+      <path d="M 412,352 Q 460,355 525,350"/>
+      <path d="M 412,368 Q 460,371 528,365"/>
+      <path d="M 418,385 Q 460,387 518,380"/>
+    </g>
+
+    <!-- SULCI -->
+    <g class="sulcus">
+      <path d="M 70,150 Q 130,130 200,135 T 260,140"/>
+      <path d="M 90,180 Q 150,165 220,170"/>
+      <path d="M 280,110 Q 340,95 410,100 T 460,110"/>
+      <path d="M 290,150 Q 360,140 440,145"/>
+      <path d="M 130,260 Q 200,255 280,260 T 420,265"/>
+      <path d="M 150,285 Q 230,280 310,285 T 420,290"/>
+      <path d="M 260,80 Q 263,140 265,200" stroke-width="1.2"/>
+    </g>
+
+    <!-- REGION LABELS -->
+    <text class="label-region" x="150" y="135" fill="#0d47a1" text-anchor="middle">Frontal</text>
+    <text class="label-region" x="150" y="158" fill="#0d47a1" text-anchor="middle">Lobes</text>
+    
+    <text class="label-region" x="365" y="125" fill="#7a5c00" text-anchor="middle">Parietal</text>
+    <text class="label-region" x="365" y="148" fill="#7a5c00" text-anchor="middle">Lobes</text>
+    
+    <text class="label-region" x="498" y="155" fill="#a01818" text-anchor="middle">Occipital</text>
+    
+    <text class="label-region" x="280" y="278" fill="#1b5e20" text-anchor="middle">Temporal Lobes</text>
+    
+    <text class="label-region" x="475" y="358" fill="#1a1a1a" text-anchor="middle">Cerebellum</text>
+    
+    <text class="label-region" x="343" y="380" fill="#1a1a1a" text-anchor="middle" font-size="14">Brain</text>
+    <text class="label-region" x="343" y="397" fill="#1a1a1a" text-anchor="middle" font-size="14">Stem</text>
+  </g>
+
+  <!-- =============================================================== -->
+  <!-- LABELS — 4 sectors: TOP-LEFT, BOTTOM-LEFT, TOP-RIGHT, BOTTOM-RIGHT -->
+  <!-- Brain occupies x=560-1085, y=280-690                               -->
+  <!-- =============================================================== -->
+
+  <!-- =================== TOP STRIP (above brain) =================== -->
+  <!-- Reward Mechanisms L2 -->
+  <g transform="translate(640, 130)">
+    <rect class="l2" x="0" y="0" width="195" height="26" rx="3"/>
+    <text class="label" x="97" y="17" text-anchor="middle">Reward Mechanisms (L2)</text>
+  </g>
+  <line class="lead" x1="737" y1="156" x2="755" y2="345"/>
+
+  <!-- Inhibitory Control L3 -->
+  <g transform="translate(860, 130)">
+    <rect class="l3" x="0" y="0" width="170" height="26" rx="3"/>
+    <text class="label" x="85" y="17" text-anchor="middle">Inhibitory Control (L3)</text>
+  </g>
+  <line class="lead" x1="945" y1="156" x2="845" y2="350"/>
+
+  <!-- =================== TOP-LEFT (Frontal upper) =================== -->
+  <!-- Contextual Memory L3 -->
+  <g transform="translate(110, 105)">
+    <rect class="l3" x="0" y="0" width="220" height="44" rx="3"/>
+    <text class="label" x="110" y="18" text-anchor="middle">Contextual Memory &amp;</text>
+    <text class="label" x="110" y="36" text-anchor="middle">Emotional Coloring (L3)</text>
+  </g>
+  <line class="lead" x1="330" y1="127" x2="660" y2="370"/>
+
+  <!-- Self-awareness L3 -->
+  <g transform="translate(170, 175)">
+    <rect class="l3" x="0" y="0" width="160" height="26" rx="3"/>
+    <text class="label" x="80" y="17" text-anchor="middle">Self-awareness (L3)</text>
+  </g>
+  <line class="lead" x1="330" y1="201" x2="650" y2="395"/>
+
+  <!-- Emotional Processing L3 -->
+  <g transform="translate(140, 235)">
+    <rect class="l3" x="0" y="0" width="190" height="26" rx="3"/>
+    <text class="label" x="95" y="17" text-anchor="middle">Emotional Processing (L3)</text>
+  </g>
+  <line class="lead" x1="330" y1="261" x2="640" y2="425"/>
+
+  <!-- =================== LEFT SIDE (Frontal middle/lower) =================== -->
+  <!-- Empathy L3 -->
+  <g transform="translate(40, 305)">
+    <rect class="l3" x="0" y="0" width="120" height="26" rx="3"/>
+    <text class="label" x="60" y="17" text-anchor="middle">Empathy (L3)</text>
+  </g>
+  <line class="lead" x1="160" y1="318" x2="610" y2="420"/>
+
+  <!-- Working Memory L2 -->
+  <g transform="translate(20, 345)">
+    <rect class="l2" x="0" y="0" width="160" height="26" rx="3"/>
+    <text class="label" x="80" y="17" text-anchor="middle">Working Memory (L2)</text>
+  </g>
+  <line class="lead" x1="180" y1="358" x2="615" y2="455"/>
+
+  <!-- Planning L2 -->
+  <g transform="translate(50, 385)">
+    <rect class="l2" x="0" y="0" width="115" height="26" rx="3"/>
+    <text class="label" x="57" y="17" text-anchor="middle">Planning (L2)</text>
+  </g>
+  <line class="lead" x1="165" y1="398" x2="615" y2="480"/>
+
+  <!-- Cognitive Flexibility L3 -->
+  <g transform="translate(10, 425)">
+    <rect class="l3" x="0" y="0" width="195" height="26" rx="3"/>
+    <text class="label" x="97" y="17" text-anchor="middle">Cognitive Flexibility (L3)</text>
+  </g>
+  <line class="lead" x1="205" y1="438" x2="618" y2="498"/>
+
+  <!-- Logical Reasoning L2 -->
+  <g transform="translate(30, 465)">
+    <rect class="l2" x="0" y="0" width="160" height="26" rx="3"/>
+    <text class="label" x="80" y="17" text-anchor="middle">Logical Reasoning (L2)</text>
+  </g>
+  <line class="lead" x1="190" y1="478" x2="615" y2="500"/>
+
+  <!-- Decision-making L2 -->
+  <g transform="translate(40, 505)">
+    <rect class="l2" x="0" y="0" width="155" height="26" rx="3"/>
+    <text class="label" x="77" y="17" text-anchor="middle">Decision-making (L2)</text>
+  </g>
+  <line class="lead" x1="195" y1="518" x2="615" y2="510"/>
+
+  <!-- =================== BOTTOM-LEFT (Temporal lower) =================== -->
+  <!-- Language Comprehension L1 -->
+  <g transform="translate(15, 580)">
+    <rect class="l1" x="0" y="0" width="220" height="44" rx="3"/>
+    <text class="label" x="110" y="18" text-anchor="middle">Language Comprehension</text>
+    <text class="label" x="110" y="36" text-anchor="middle">and Production (L1)</text>
+  </g>
+  <line class="lead" x1="235" y1="602" x2="655" y2="555"/>
+
+  <!-- Facial Expression Processing L1 -->
+  <g transform="translate(15, 670)">
+    <rect class="l1" x="0" y="0" width="240" height="44" rx="3"/>
+    <text class="label" x="120" y="18" text-anchor="middle">Facial Expression</text>
+    <text class="label" x="120" y="36" text-anchor="middle">Processing (L1)</text>
+  </g>
+  <line class="lead" x1="255" y1="692" x2="700" y2="585"/>
+
+  <!-- Episodic Memory L2 -->
+  <g transform="translate(15, 750)">
+    <rect class="l2" x="0" y="0" width="240" height="44" rx="3"/>
+    <text class="label" x="120" y="18" text-anchor="middle">Episodic Memory &amp;</text>
+    <text class="label" x="120" y="36" text-anchor="middle">Lifelong Learning (L2)</text>
+  </g>
+  <line class="lead" x1="255" y1="772" x2="730" y2="615"/>
+
+  <!-- =================== TOP-RIGHT (Parietal upper) =================== -->
+  <!-- Attention L2 -->
+  <g transform="translate(1170, 175)">
+    <rect class="l2" x="0" y="0" width="125" height="26" rx="3"/>
+    <text class="label" x="62" y="17" text-anchor="middle">Attention (L2)</text>
+  </g>
+  <line class="lead" x1="1170" y1="188" x2="950" y2="370"/>
+
+  <!-- Orientation L2 -->
+  <g transform="translate(1180, 220)">
+    <rect class="l2" x="0" y="0" width="135" height="26" rx="3"/>
+    <text class="label" x="67" y="17" text-anchor="middle">Orientation (L2)</text>
+  </g>
+  <line class="lead" x1="1180" y1="233" x2="950" y2="400"/>
+
+  <!-- Sensorimotor Coordination L2 -->
+  <g transform="translate(1180, 270)">
+    <rect class="l2" x="0" y="0" width="265" height="26" rx="3"/>
+    <text class="label" x="132" y="17" text-anchor="middle">Sensorimotor Coordination (L2)</text>
+  </g>
+  <line class="lead" x1="1180" y1="283" x2="965" y2="425"/>
+
+  <!-- Tactile Perception L3 -->
+  <g transform="translate(1190, 320)">
+    <rect class="l3" x="0" y="0" width="200" height="26" rx="3"/>
+    <text class="label" x="100" y="17" text-anchor="middle">Tactile Perception (L3)</text>
+  </g>
+  <line class="lead" x1="1190" y1="333" x2="970" y2="455"/>
+
+  <!-- Visual Perception L1 -->
+  <g transform="translate(1290, 370)">
+    <rect class="l1" x="0" y="0" width="180" height="26" rx="3"/>
+    <text class="label" x="90" y="17" text-anchor="middle">Visual Perception (L1)</text>
+  </g>
+  <line class="lead" x1="1290" y1="383" x2="1080" y2="450"/>
+
+  <!-- Scene Understanding L2 -->
+  <g transform="translate(1245, 425)">
+    <rect class="l2" x="0" y="0" width="245" height="44" rx="3"/>
+    <text class="label" x="122" y="18" text-anchor="middle">Scene Understanding /</text>
+    <text class="label" x="122" y="36" text-anchor="middle">Visual Reasoning (L2)</text>
+  </g>
+  <line class="lead" x1="1245" y1="447" x2="1085" y2="475"/>
+
+  <!-- =================== RIGHT SIDE (Cerebellum) =================== -->
+  <!-- Adaptive Error Correction L2 -->
+  <g transform="translate(1185, 510)">
+    <rect class="l2" x="0" y="0" width="265" height="26" rx="3"/>
+    <text class="label" x="132" y="17" text-anchor="middle">Adaptive Error Correction (L2)</text>
+  </g>
+  <line class="lead" x1="1185" y1="523" x2="1080" y2="595"/>
+
+  <!-- Skill Learning L2 -->
+  <g transform="translate(1230, 560)">
+    <rect class="l2" x="0" y="0" width="155" height="26" rx="3"/>
+    <text class="label" x="77" y="17" text-anchor="middle">Skill Learning (L2)</text>
+  </g>
+  <line class="lead" x1="1230" y1="573" x2="1080" y2="625"/>
+
+  <!-- Motor Coordination L2 -->
+  <g transform="translate(1210, 610)">
+    <rect class="l2" x="0" y="0" width="195" height="26" rx="3"/>
+    <text class="label" x="97" y="17" text-anchor="middle">Motor Coordination (L2)</text>
+  </g>
+  <line class="lead" x1="1210" y1="623" x2="1080" y2="650"/>
+
+  <!-- Cognitive Timing L3 -->
+  <g transform="translate(1180, 660)">
+    <rect class="l3" x="0" y="0" width="270" height="44" rx="3"/>
+    <text class="label" x="135" y="18" text-anchor="middle">Cognitive Timing &amp;</text>
+    <text class="label" x="135" y="36" text-anchor="middle">Predictive Modeling (L3)</text>
+  </g>
+  <line class="lead" x1="1180" y1="682" x2="1075" y2="675"/>
+
+  <!-- =================== BOTTOM CENTER (Brain Stem) =================== -->
+  <!-- Auditory Processing L1 -->
+  <g transform="translate(370, 740)">
+    <rect class="l1" x="0" y="0" width="200" height="26" rx="3"/>
+    <text class="label" x="100" y="17" text-anchor="middle">Auditory Processing (L1)</text>
+  </g>
+  <line class="lead" x1="470" y1="740" x2="700" y2="615"/>
+
+  <!-- Semantic Understanding L2 -->
+  <g transform="translate(610, 750)">
+    <rect class="l2" x="0" y="0" width="270" height="44" rx="3"/>
+    <text class="label" x="135" y="18" text-anchor="middle">Semantic Understanding &amp;</text>
+    <text class="label" x="135" y="36" text-anchor="middle">Context Recognition (L2)</text>
+  </g>
+  <line class="lead" x1="745" y1="750" x2="780" y2="650"/>
+
+  <!-- Motivational Drives L3 -->
+  <g transform="translate(925, 750)">
+    <rect class="l3" x="0" y="0" width="220" height="26" rx="3"/>
+    <text class="label" x="110" y="17" text-anchor="middle">Motivational Drives (L3)</text>
+  </g>
+  <line class="lead" x1="925" y1="763" x2="850" y2="650"/>
+
+  <!-- Reflexive Responses L1 — connect to brain stem -->
+  <g transform="translate(370, 800)">
+    <rect class="l1" x="0" y="0" width="200" height="26" rx="3"/>
+    <text class="label" x="100" y="17" text-anchor="middle">Reflexive Responses (L1)</text>
+  </g>
+  <line class="lead" x1="470" y1="826" x2="870" y2="700"/>
+
+  <!-- Autonomic Regulation L3 -->
+  <g transform="translate(610, 810)">
+    <rect class="l3" x="0" y="0" width="220" height="26" rx="3"/>
+    <text class="label" x="110" y="17" text-anchor="middle">Autonomic Regulation (L3)</text>
+  </g>
+  <line class="lead" x1="720" y1="836" x2="880" y2="710"/>
+
+  <!-- Arousal and Attention States L3 -->
+  <g transform="translate(870, 810)">
+    <rect class="l3" x="0" y="0" width="270" height="26" rx="3"/>
+    <text class="label" x="135" y="17" text-anchor="middle">Arousal and Attention States (L3)</text>
+  </g>
+  <line class="lead" x1="950" y1="836" x2="900" y2="720"/>
+
+  <!-- =================== LEGEND BOX =================== -->
+  <g transform="translate(1180, 870)">
+    <rect x="0" y="0" width="400" height="68" fill="none" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4,3" rx="4"/>
+    <rect class="l1" x="12" y="12" width="16" height="14"/>
+    <text class="label" x="36" y="24">L1: Well-developed in current AI.</text>
+    <rect class="l2" x="12" y="30" width="16" height="14"/>
+    <text class="label" x="36" y="42">L2: Moderately explored, with partial progress.</text>
+    <rect class="l3" x="12" y="48" width="16" height="14"/>
+    <text class="label" x="36" y="60">L3: Rarely explored; significant room for research.</text>
+  </g>
+
+</svg>
